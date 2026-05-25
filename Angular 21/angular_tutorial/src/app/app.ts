@@ -6,11 +6,13 @@ import { Event } from "./event/event";
 import { FunctionCall } from './function-call/function-call';
 import { DataTypes } from './data-types/data-types';
 import { Events } from './events/events';
+import { InputFieldsValues } from './input-fields-values/input-fields-values';
+import { CssStyling } from './css-styling/css-styling';
 
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, Login, SigninComponent, Event,FunctionCall,DataTypes,Events],
+  imports: [RouterOutlet, Login, SigninComponent, Event,FunctionCall,DataTypes,Events,InputFieldsValues,CssStyling],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
