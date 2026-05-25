@@ -1,0 +1,11 @@
+<p>input-fields-values works!</p>
+<input placeholder="Enter your name" (input)="updateName($event.target.value)" >
+<p>Your name: {{name}}</p>
+
+<input placeholder="Enter city name" (input)="city=$event.target.value" >
+<p>Your city name: {{city}}</p>
+
+<input #userInput placeholder="Enter email"  >
+<p>Your email : {{email}}</p>
+
+<button (click)="getEmail(userInput.value)">Get Email</button>
