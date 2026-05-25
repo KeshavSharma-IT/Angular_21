@@ -4,10 +4,12 @@ import { Login } from './login/login';
 import { SigninComponent } from './signin/signin';
 import { Event } from "./event/event";
 import { FunctionCall } from './function-call/function-call';
+import { DataTypes } from './data-types/data-types';
+
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, Login, SigninComponent, Event,FunctionCall],
+  imports: [RouterOutlet, Login, SigninComponent, Event,FunctionCall,DataTypes],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
