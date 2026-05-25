@@ -1,0 +1,9 @@
+<p>event works!</p>
+<h2 >{{count}}</h2>
+<button (click)="increment()">click</button>
+
+<input [value]="userName" [disabled]="true" >
+<p>Your userName is-> {{userName}}</p>
+<input (input)="updateUser($event.target.value)"  >
+
+
