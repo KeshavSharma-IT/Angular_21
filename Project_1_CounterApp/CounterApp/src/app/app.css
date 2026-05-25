@@ -1,0 +1,84 @@
+/* Full page center */
+.main {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  font-family: Arial, sans-serif;
+}
+
+/* Card design */
+.counter-card {
+  background: #fff;
+  padding: 40px;
+  border-radius: 20px;
+  text-align: center;
+  width: 320px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* Heading */
+.counter-card h1 {
+  margin-bottom: 20px;
+  color: #333;
+  font-size: 28px;
+}
+
+/* Counter value */
+.count {
+  font-size: 60px;
+  color: #764ba2;
+  margin: 20px 0;
+  font-weight: bold;
+}
+
+/* Buttons container */
+.btns {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+/* Common button style */
+.btn {
+  border: none;
+  padding: 12px 18px;
+  font-size: 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s ease;
+  color: white;
+  font-weight: bold;
+}
+
+/* Increment button */
+.increment {
+  background: #28a745;
+}
+
+.increment:hover {
+  background: #218838;
+  transform: scale(1.05);
+}
+
+/* Decrement button */
+.decrement {
+  background: #dc3545;
+}
+
+.decrement:hover {
+  background: #c82333;
+  transform: scale(1.05);
+}
+
+/* Reset button */
+.reset {
+  background: #007bff;
+}
+
+.reset:hover {
+  background: #0056b3;
+  transform: scale(1.05);
+}

@@ -1,0 +1,21 @@
+<div class="main">
+  <div class="counter-card">
+    <h1>Simple Counter App</h1>
+
+    <h3 class="count">{{ counter }}</h3>
+
+    <div class="btns">
+      <!-- <button class="btn increment" (click)="increment()">+</button>
+
+      <button class="btn decrement" (click)="decrement()">−</button>
+
+      <button class="btn reset" (click)="reset()">Reset</button> -->
+
+      <button class="btn increment" (click)="handle('add')">+</button>
+
+      <button class="btn decrement" (click)="handle('sub')">−</button>
+
+      <button class="btn reset" (click)="handle('reset')">Reset</button>
+    </div>
+  </div>
+</div>

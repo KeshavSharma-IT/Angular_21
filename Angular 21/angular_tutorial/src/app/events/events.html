@@ -1,1 +1,13 @@
 <p>events works!</p>
+<button (click)="handleClick()">click event</button>
+<br>
+<p>on click event</p>
+<input (input)="onTyping($event)"  (blur)="onBlur()"  (focus)="onFocus()" placeholder="type and blur and focus event">
+
+<p>key up event</p>
+<input (keyup)="onKeyUp($event)" >
+
+<p>Mouse event</p>
+<div (mouseover)="onHover()" (mouseleave)="onLeave()" class="hover-box">
+    hover text
+</div>

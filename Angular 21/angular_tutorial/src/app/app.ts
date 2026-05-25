@@ -5,11 +5,12 @@ import { SigninComponent } from './signin/signin';
 import { Event } from "./event/event";
 import { FunctionCall } from './function-call/function-call';
 import { DataTypes } from './data-types/data-types';
+import { Events } from './events/events';
 
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, Login, SigninComponent, Event,FunctionCall,DataTypes],
+  imports: [RouterOutlet, Login, SigninComponent, Event,FunctionCall,DataTypes,Events],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
