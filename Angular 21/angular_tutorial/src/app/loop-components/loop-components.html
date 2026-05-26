@@ -1,0 +1,36 @@
+<p>loop-components works!</p>
+
+@for (item of items;track $index){
+    @if($first){
+        <h3>this is $first element {{item}}</h3>
+    }
+    @if($last){
+        <h3>this is $last element {{item}}</h3>
+    }
+    <h3>{{$index+1}}. {{item}}</h3>
+    <h5>Total count-> {{$count}}</h5>
+}
+
+@for(obj of users;track $index){
+    <h2>{{$index+1}} Name: {{obj.name}} ,Age: {{obj.age}}</h2>
+}
+
+@for (item of items;track $index){
+    <p [style.background]="$odd?'red':'yellow'">
+        {{$index+1}}. {{item}}   
+    </p>
+    
+}
+
+@for(num of nums;track $index){
+
+    <div>
+        <strong>{{num}}</strong>
+        <span>| Index :{{$index}}</span>
+        <span>| Even : {{$even}}</span>
+        <span>| odd :{{$odd}}</span>
+        <span>| first :{{$first}}</span>
+        <span>| last: {{$last}}</span>
+        <span>| count : {{$count}}</span>
+    </div>
+}

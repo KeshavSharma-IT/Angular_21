@@ -1,0 +1,51 @@
+<p>control-statement works!</p>
+@if(isLoggedin){
+    <h1>welcome Keshav</h1>
+}@else {
+    <h2>Welcome Guest. Please login</h2>
+}
+
+@if(marks>=50){
+    <p>pass</p>
+}@else {
+    <p>Fail</p>
+}
+
+<button (click)="toggleBox()">Toggle</button>
+
+@if(showBox){
+    <p class="box">box visible</p>
+}
+
+<input (input)="updateEvent($event.target.value)" placeholder="Enter your age">
+
+@if(age>18){
+    <p>you are a Adult</p>
+}@else {
+    <p>You are a minior</p>
+}
+
+
+
+
+@if(status==="Processing"){
+    <p>Your order is in process</p>
+}
+@else if(status==="pending"){
+    <p>Your status is in pending state</p>
+}@else if(status==="shipped"){
+    <p>your order is shipped</p>
+}@else{
+    <p>status unknown</p>
+}
+
+
+<style>
+    .box{
+            width: 100px;
+            background: red;
+            margin-left: 13px;
+            padding: 20px;
+            border-radius: 10px;
+    }
+</style>
