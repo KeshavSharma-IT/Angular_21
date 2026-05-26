@@ -1,0 +1,38 @@
+<p>switch-case works!</p>
+
+@switch (value) {
+    @case('Home'){
+        <p>Home page</p>
+    }
+    @case ('about') {
+        <p>about page</p>
+    }@case ('contact') {
+        <p>contact page</p>
+    }
+    @default {
+        <p>Page not found</p>
+    }
+
+    
+
+
+
+}
+
+
+<button (click)="tab='Home'">Home</button>
+    <button (click)="tab='About'">about</button>
+    <button (click)="tab='Contact'">contact</button>
+    
+
+    @switch (tab) {
+        @case ('Home') {
+            <p>Home page</p>
+        }
+        @case ('About') {
+            <p>about page</p>
+        }
+        @case ('Contact') {
+            <p>Contact page</p>
+        }
+    }

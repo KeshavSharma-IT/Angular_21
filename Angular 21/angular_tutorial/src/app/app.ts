@@ -8,11 +8,17 @@ import { DataTypes } from './data-types/data-types';
 import { Events } from './events/events';
 import { InputFieldsValues } from './input-fields-values/input-fields-values';
 import { CssStyling } from './css-styling/css-styling';
+import { ControlStatement } from './control-statement/control-statement';
+import { SwitchCase } from './switch-case/switch-case';
+import { LoopComponents } from './loop-components/loop-components';
 
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, Login, SigninComponent, Event,FunctionCall,DataTypes,Events,InputFieldsValues,CssStyling],
+  imports: [RouterOutlet, Login, SigninComponent, Event,FunctionCall,DataTypes,
+    Events,InputFieldsValues,CssStyling,ControlStatement,SwitchCase,
+    LoopComponents
+  ],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
