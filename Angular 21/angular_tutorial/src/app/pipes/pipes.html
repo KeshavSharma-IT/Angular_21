@@ -1,0 +1,29 @@
+<p>pipes works!</p>
+
+<P> lower case {{name }}</P>
+<P> lower case displayes as uppercase with the help pipe |  {{name | uppercase}}</P>
+
+<P> uppercase {{uName }}</P>
+<P> upper case displayes as lower case with the help pipe | {{uName | lowercase}}</P>
+
+<p>todays Date :{{today}}</p>
+
+<p>todays full Date with pipe :{{today | date:'fullDate'}}</p>
+<p>todays custom date with pipe :{{today | date:'dd/MM/yyyy'}}</p>
+
+<p>amount orignal {{amount}}</p>
+<p>amount  by default currency {{amount | currency}}</p>
+
+<p>amount  by INR currency {{amount | currency : 'INR'}}</p>
+
+<p>amount  by USD currency {{amount | currency : 'USD'}}</p>
+<p>amount  by EUR currency {{amount | currency : 'EUR'}}</p>
+
+<p>amount  by custom currency {{amount | currency : 'INR': 'symbol':'1.0-0'}}</p>
+
+<P>Normal value {{per}}</P>
+<P>Normal value converted to % -> {{per | percent}}</P>
+
+<p>user object => {{user}} ; user.name=> {{user.name}} ; user.email=> {{user.email}}</p>
+
+<p>user json with pipe {{user | json}}</p>

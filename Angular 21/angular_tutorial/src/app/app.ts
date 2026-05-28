@@ -11,13 +11,18 @@ import { CssStyling } from './css-styling/css-styling';
 import { ControlStatement } from './control-statement/control-statement';
 import { SwitchCase } from './switch-case/switch-case';
 import { LoopComponents } from './loop-components/loop-components';
+import { SignalsLearn } from './signals-learn/signals-learn';
+import { Effects } from './effects/effects';
+import { Pipes } from './pipes/pipes';
 
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, Login, SigninComponent, Event,FunctionCall,DataTypes,
+  imports: [RouterOutlet, 
+    Login, SigninComponent, Event,FunctionCall,DataTypes,
     Events,InputFieldsValues,CssStyling,ControlStatement,SwitchCase,
-    LoopComponents
+    LoopComponents,SignalsLearn,Pipes,
+    Effects
   ],
   templateUrl: './app.html',
   styleUrl: './app.css'
