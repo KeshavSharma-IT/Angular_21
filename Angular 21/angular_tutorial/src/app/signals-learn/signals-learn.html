@@ -1,0 +1,33 @@
+<h2>Signal</h2>
+<p>value->{{val}}</p>
+<p>Signal -> {{count()}}</p>
+
+<button (click)="increment()">+</button>
+<button (click)="decrement()">-</button>
+<button (click)="reset()">reset</button>
+
+<button (click)="count.set(20)"> signal increment</button>
+
+<p> mycount=> {{myCount()}}</p> 
+<p>name -> {{name()}}</p>
+<P>isActive-> {{isActive()}}</P>
+
+<p>User Object-> {{user()}}</p>
+<p>User Object name-> {{user().name}} , user object age->{{user().age}}</p>
+
+<p>{{num()}}</p>
+<p>nums array first value-> {{num()[0]}}, last value->{{num()[num().length-1]}}</p>
+
+<button (click)="Directupdate()" >Update array</button>
+<button (click)="addNumber()" >add number array</button>
+
+
+<p>{{NewCount()}}</p>
+<p>{{doubleNewCount()}}</p>
+<p>{{trippleNewCount()}}</p>
+
+<button (click)="incrementNew()"> signal new countincrement</button>
+
+<p>{{firstName()}}</p>
+<p>{{lastName()}}</p>
+<p>{{fullName()}}</p>
