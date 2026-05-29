@@ -27,3 +27,17 @@
 <p>user object => {{user}} ; user.name=> {{user.name}} ; user.email=> {{user.email}}</p>
 
 <p>user json with pipe {{user | json}}</p>
+
+
+<p>---------------Custome pipe start---------------</p>
+
+<p>{{fullname}}</p>
+<p>fullname changed with pipe short name {{fullname | pipeshortName}}</p>
+
+<p>----------------currency custom pipe------------------</p>   
+
+<h2> amount in usd=> {{usd}}</h2>   
+
+<h2> amount converted from usd to inr => {{usd |convertCurrency :usdToInr}}</h2>
+<p> use built in pipeline inside custom pipeline</p>
+<h2> amount converted from usd to inr => {{usd |convertCurrency :usdToInr}}  and using buildin pipeline for currency symbol {{usd |convertCurrency :usdToInr | currency:'INR'}} </h2>

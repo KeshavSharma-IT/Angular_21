@@ -1,4 +1,4 @@
-import { Component, signal } from '@angular/core';
+import { Component, signal, twoWayBinding } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { Login } from './login/login';
 import { SigninComponent } from './signin/signin';
@@ -14,6 +14,9 @@ import { LoopComponents } from './loop-components/loop-components';
 import { SignalsLearn } from './signals-learn/signals-learn';
 import { Effects } from './effects/effects';
 import { Pipes } from './pipes/pipes';
+import { SignalDeepDive } from './signal-deep-dive/signal-deep-dive';
+import { TwoWayBinding } from './two-way-binding/two-way-binding';
+
 
 
 @Component({
@@ -21,8 +24,9 @@ import { Pipes } from './pipes/pipes';
   imports: [RouterOutlet, 
     Login, SigninComponent, Event,FunctionCall,DataTypes,
     Events,InputFieldsValues,CssStyling,ControlStatement,SwitchCase,
-    LoopComponents,SignalsLearn,Pipes,
-    Effects
+    LoopComponents,SignalsLearn,Pipes,Effects,SignalDeepDive,
+    TwoWayBinding
+    
   ],
   templateUrl: './app.html',
   styleUrl: './app.css'
