@@ -16,6 +16,8 @@ import { Effects } from './effects/effects';
 import { Pipes } from './pipes/pipes';
 import { SignalDeepDive } from './signal-deep-dive/signal-deep-dive';
 import { TwoWayBinding } from './two-way-binding/two-way-binding';
+import { SignalTemplateBinding } from './signal-template-binding/signal-template-binding';
+import { SinalInput } from './sinal-input/sinal-input';
 
 
 
@@ -24,8 +26,8 @@ import { TwoWayBinding } from './two-way-binding/two-way-binding';
   imports: [RouterOutlet, 
     Login, SigninComponent, Event,FunctionCall,DataTypes,
     Events,InputFieldsValues,CssStyling,ControlStatement,SwitchCase,
-    LoopComponents,SignalsLearn,Pipes,Effects,SignalDeepDive,
-    TwoWayBinding
+    LoopComponents,SignalsLearn,Pipes,Effects,SignalDeepDive,TwoWayBinding,
+    SignalTemplateBinding,SinalInput
     
   ],
   templateUrl: './app.html',
