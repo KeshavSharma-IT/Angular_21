@@ -1,3 +1,10 @@
 <p>sinal-input works!</p>
+<p>Parent to child and child to parent</p>
 
-<app-child [name]="username"></app-child>
+<!-- <app-child [name]="username "></app-child> -->
+
+<!-- <app-child (notify)="onMessage($event)"></app-child> -->
+<!-- <p>Message: {{message}}</p> -->
+
+<app-child #child></app-child>
+<p> Msg from child : {{child.message()}}</p>
