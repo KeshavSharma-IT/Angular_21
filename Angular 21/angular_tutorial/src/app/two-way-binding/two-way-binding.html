@@ -1,0 +1,14 @@
+<p>two-way-binding works!</p>
+
+<!-- <input [(ngModel)]="usrname" placeholder="enter username" >  //old way--> 
+<p>{{usrname}}</p>
+
+<P>name -: {{name1()}}</P>
+<input [value]="name1()" (input)="name1.set($event.target.value)" placeholder="enter name" >
+
+
+<P>user name -: {{user().name}}</P>
+<input [value]="user().name" (input)="updateName($event.target.value)" placeholder="enter name of user" >
+
+<p>{{user().age}}</p>
+<button (click)="updateAge()" >Increase age</button>
