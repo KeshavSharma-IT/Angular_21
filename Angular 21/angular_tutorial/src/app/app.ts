@@ -19,6 +19,9 @@ import { TwoWayBinding } from './two-way-binding/two-way-binding';
 import { SignalTemplateBinding } from './signal-template-binding/signal-template-binding';
 import { SinalInput } from './sinal-input/sinal-input';
 import { StoreWithSignal } from './store-with-signal/store-with-signal';
+import { Form } from './form/form';
+import { Card } from './card/card';
+import { ResuableComponents } from './resuable-components/resuable-components';
 
 
 
@@ -29,7 +32,7 @@ import { StoreWithSignal } from './store-with-signal/store-with-signal';
     Events,InputFieldsValues,CssStyling,ControlStatement,SwitchCase,
     LoopComponents,SignalsLearn,Pipes,Effects,SignalDeepDive,TwoWayBinding,
     SignalTemplateBinding,SinalInput,
-    StoreWithSignal,
+    StoreWithSignal,Form,Card,ResuableComponents
     
   ],
   templateUrl: './app.html',

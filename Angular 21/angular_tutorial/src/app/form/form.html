@@ -1,0 +1,26 @@
+<p>form works!</p>
+<!-- <p>Old way</p>
+
+<h2>Template driven form signal</h2>
+<input [(ngModel)]="name" (ngModelChange)="name.set($event)"  placeholder=" Enter your name">
+<br>
+<input [(ngModel)]="email" (ngModelChange)="email.set($event)"  placeholder=" Enter your Email">
+<br>
+
+<button (click)="submitForm()">Submit</button>
+
+<p>Name: {{name()}}</p>
+<p>Email: {{email()}}</p> -->
+
+<h1>New Way-> Signal Reactive form</h1>
+<form [formGroup]="form">
+    <input formControlName="name" placeholder="name">
+    <br><br>
+    <input formControlName="email" placeholder="email">
+    <br><br>
+    <button (click)="submitForm()">Sumit</button>
+
+</form>
+
+<p>Name: {{form.get('name')?.value}}</p>
+<p>Email: {{form.get('Email')?.value}}</p>
