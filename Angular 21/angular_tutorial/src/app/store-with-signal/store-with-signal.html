@@ -1,0 +1,20 @@
+<p>store-with-signal works!</p>
+
+<!-- <p>Counter App</p>
+<p>Countetr count:{{counterStore.count()}}</p>
+
+<button  (click)="counterStore.increment()" >+</button>
+<button (click)="counterStore.decrement()">-</button>
+<button (click)="counterStore.reset()">reset</button> -->
+
+<h2>Application</h2>
+@if(userStore.user()){
+    <p>Welcome {{userStore.user()!.name}}</p>
+    @if(userStore.isAdmin()){
+        <p>Admin Access</p>
+    }
+
+    <button (click)="userStore.logout()">LogOut</button>
+}@else {
+    <button (click)="userStore.login('keshav','admin')">Login As admin</button>
+}

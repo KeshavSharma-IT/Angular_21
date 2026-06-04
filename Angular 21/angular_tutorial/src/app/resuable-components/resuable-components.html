@@ -1,0 +1,16 @@
+<p>resuable-components works!</p>
+
+<app-card [tittle]="'Angular Course'" [description]="'this is my resuable components'">
+
+    <p>this is from parent component it is desplaying using <b>ng-content</b></p>
+</app-card>
+
+<app-button [label]="'Save'" (clicked)="saveData()" ></app-button>
+
+<app-button [label]="'Save Btn'" (clicked)="onSave($event)" ></app-button>
+<p> {{message }}</p>
+
+<!-- <app-form-fields [label]="'Email'" [value]="'test@gmail.com'" [type]="'email'"></app-form-fields> -->
+
+<app-form-fields [label]="'Email'"  [type]="'email'" (valueChange)="onEmailChnage($event)"></app-form-fields>
+<p>Email: {{email}}</p>
