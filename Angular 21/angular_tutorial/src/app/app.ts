@@ -1,5 +1,5 @@
 import { Component, signal, twoWayBinding } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { RouterOutlet, RouterLink } from '@angular/router';
 import { Login } from './login/login';
 import { SigninComponent } from './signin/signin';
 import { Event } from "./event/event";
@@ -27,14 +27,12 @@ import { ResuableComponents } from './resuable-components/resuable-components';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, 
-    Login, SigninComponent, Event,FunctionCall,DataTypes,
-    Events,InputFieldsValues,CssStyling,ControlStatement,SwitchCase,
-    LoopComponents,SignalsLearn,Pipes,Effects,SignalDeepDive,TwoWayBinding,
-    SignalTemplateBinding,SinalInput,
-    StoreWithSignal,Form,Card,ResuableComponents
-    
-  ],
+  imports: [RouterOutlet,
+    Login, SigninComponent, Event, FunctionCall, DataTypes,
+    Events, InputFieldsValues, CssStyling, ControlStatement, SwitchCase,
+    LoopComponents, SignalsLearn, Pipes, Effects, SignalDeepDive, TwoWayBinding,
+    SignalTemplateBinding, SinalInput,
+    StoreWithSignal, Form, Card, ResuableComponents, RouterLink],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
