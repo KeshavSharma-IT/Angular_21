@@ -1,4 +1,6 @@
 import { Component, signal } from '@angular/core';
+import { Auth } from '../auth';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-login',
@@ -15,4 +17,12 @@ export class Login {
   boxWidth=100;
   bgColor='red';
   count=signal(0);
+
+
+  constructor(private auth:Auth,private router:Router){}
+
+  login(){
+    this.auth.login();
+    this.router.navigate(['dashboard']);
+  }
 }

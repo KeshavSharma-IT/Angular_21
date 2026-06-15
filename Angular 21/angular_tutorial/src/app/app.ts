@@ -22,6 +22,9 @@ import { StoreWithSignal } from './store-with-signal/store-with-signal';
 import { Form } from './form/form';
 import { Card } from './card/card';
 import { ResuableComponents } from './resuable-components/resuable-components';
+import { Admin } from './admin/admin';
+import { LazyLoading } from './lazy-loading/lazy-loading';
+import { HeaderComponents } from './header-components/header-components';
 
 
 
@@ -32,7 +35,7 @@ import { ResuableComponents } from './resuable-components/resuable-components';
     Events, InputFieldsValues, CssStyling, ControlStatement, SwitchCase,
     LoopComponents, SignalsLearn, Pipes, Effects, SignalDeepDive, TwoWayBinding,
     SignalTemplateBinding, SinalInput,
-    StoreWithSignal, Form, Card, ResuableComponents, RouterLink],
+    StoreWithSignal, Form, Card, ResuableComponents, RouterLink,Admin,LazyLoading,HeaderComponents],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })

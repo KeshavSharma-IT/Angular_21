@@ -1,0 +1,24 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: rgb(21, 24, 24);
+    color: rgb(31, 27, 27);
+}
+
+.logo{
+    color: whitesmoke;
+    margin: 0;
+}
+
+nav a{
+    color: white;
+    text-decoration: none;
+    margin-left: 15px;
+    font-weight: 500;
+}
+
+nav a.active {
+    border-bottom: 2px solid pink;
+}
